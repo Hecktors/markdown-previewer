@@ -1,0 +1,61 @@
+.MainComponent {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}
+
+.MainComponent:first-child {
+	border-right: 1px solid var(--main-bg-color);
+}
+
+.header {
+	display: flex;
+	background-color: var(--main-bg-color);
+	background-color: #fff;
+}
+
+.headerText {
+	padding: 4px 6px;
+	font-size: 12px;
+}
+
+.headerBox {
+	flex-grow: 1;
+	clip-path: polygon(0% 0, 100% 0%, 100% 100%, 15px 100%);
+	display: inline-block;
+	background-color: var(--main-bg-color);
+	text-align: right;
+}
+
+.btnClear {
+	cursor: pointer;
+	margin-right: 2px;
+	background-color: transparent;
+	color: #555;
+	border: 1px solid #999;
+	border-radius: 4px;
+}
+
+.btnClear:active,
+.btnClear:focus {
+	outline: none;
+}
+
+.btnClear:hover,
+.btnClear:active {
+	background-color: #ddd;
+}
+
+.content {
+	height: 100%;
+	padding: 5px;
+	padding-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+	.MainComponent {
+		width: 100%;
+		height: 50%;
+	}
+}
